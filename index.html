@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html><head>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+
+	<title>twittard</title>
+
+	<script src="sockio.js"></script>
+	<script src="lodash.min.js"></script>
+	<script src="client.js"></script>
+	<script src="ICanHaz.min.js"></script>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/css.css" />
+
+</head><body>
+
+	<div id="streamOutputArea"></div>
+
+	<div id="statsArea">
+
+	<input id="streamInput" value="baseball" /><input id="streamButton" onClick="requestStream()" type="button" value="stream"></input>
+	<label for="streamInput">stream</label>
+	<input id="autoScroll" type="checkbox" onChange="toggleAutoScroll(this);" checked></input>
+	<label for="autoScroll">AutoScroll</label>
+	</div>
+
+<script id="streamTweet" type="text/html">
+	<div class="stream">
+		<img src="{{ image }}">
+		<a href="https://twitter.com/{{ screen_name }}/" target="_blank">@{{ screen_name }}</a>
+		{{# location }} from {{ location }} {{/ location }} says {{{ text }}}
+	</div>
+</script>
+
+<script id="keyword" type="text/html">
+	<span class="keyword" style="color: #{{ keywordColor }}; background-color: #{{ keywordInverseColor }};">{{ keyword }}</span>
+</script>
+
+<script id="link" type="text/html">
+	<a class="messageLink" href="{{ url }}" target=_blank>{{ url }}</a>
+</script>
+
+<script id="data" type="text/html">
+	<span class="data">{{ data }}</span><br>
+</script>
+
+<script id="error" type="text/html">
+	{{ message }}<br>
+</script>
+
+</body></html>

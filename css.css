@@ -1,0 +1,83 @@
+.stream
+{
+	min-height: 48px;
+}
+
+.stream a
+{
+	color: #f00;
+}
+
+#statsArea
+{
+	height: 20px;
+	overflow: hidden;
+	white-space: nowrap;
+	background-color: #c3c3c3;
+}
+
+#controls
+{
+	height: 20px;
+	float: right;
+	color: #000000;
+	background-color: #c3c3c3;
+}
+
+#searchOutputArea, #streamOutputArea, #homeOutputArea
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+
+#searchOutputArea
+{
+	background-color: #c0c0c0;
+	font-family: monospace;
+}
+
+#userOutputArea
+{
+	background-color: #f0f0f0;
+	font-family: monospace;
+}
+
+#homeOutputArea
+{
+	background-color: #505050;
+	font-family: monospace;
+}
+
+.link
+{
+	text-decoration: underline;
+	color: #f3d;
+	background-color: #dddddd;
+}
+
+.data
+{
+	color: #ffffff;
+}
+
+body
+{
+	color: #ffffff;
+	background-color: #000000;
+}
+
+.messageLink
+{
+        text-decoration: underline;
+        color: #f3d;
+        background-color: #dddddd;
+}
+
